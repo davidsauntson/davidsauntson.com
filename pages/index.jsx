@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/layout';
 
-export const config = { amp: true };
+export const config = { amp: false };
 
 export default function Home() {
   return (
