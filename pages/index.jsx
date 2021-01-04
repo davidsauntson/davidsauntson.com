@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/layout';
 
-export const config = { amp: 'HYBRID' };
+export const config = { amp: true };
 
 export default function Home() {
   return (
