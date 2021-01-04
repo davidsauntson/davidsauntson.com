@@ -10,6 +10,7 @@ export default function Home() {
       <Head>
         <title>David Sauntson</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="robots" content="noindex, nofollow" />
       </Head>
 
       <Layout>
