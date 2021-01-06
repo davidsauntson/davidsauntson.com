@@ -1,0 +1,20 @@
+.breadcrumbs {
+  padding: 0;
+  margin: var(--spacing-medium) 0;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  font-size: var(--font-size-small);
+}
+
+.breadcrumbs__item:after {
+  content: "/";
+  display: inline-block;
+  margin: 0 var(--spacing-small);
+  color: var(--color-slate);
+}
+
+.breadcrumbs__item:last-of-type:after {
+  display: none;
+}

@@ -1,10 +1,13 @@
 .header {
+  composes: stripes from "../components/tools.module.css";
+
   padding: calc(2 * var(--spacing-xx-large)) 0 var(--spacing-x-large) 0;
 }
 
 .title {
   margin: 0;
   font-size: 2rem;
+  color: var(--color-blue);
 }
 
 .navWrapper {

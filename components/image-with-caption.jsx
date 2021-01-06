@@ -1,18 +1,30 @@
 import Image from 'next/image';
-import styles from './image-with-caption.module.css';
-import toolStyles from './tools.module.css';
 
-export default function ImageWithCaption({ src, caption, altText }) {
+import styles from './image-with-caption.module.css';
+
+export default function ImageWithCaption({
+  src,
+  caption,
+  altText,
+  width,
+  height,
+  portrait
+}) {
+  const innerClasses = [styles.figure__inner];
+  if (portrait) {
+    innerClasses.push(styles.portrait);
+  }
+
   return (
-    <figure className={[styles.figure, toolStyles.stripes].join(' ')}>
-      <div className={styles.figure__inner}>
+    <figure className={styles.figure}>
+      <div className={innerClasses.join(' ')}>
         <Image
           className={styles.image}
           src={src}
           alt={altText}
           layout="responsive"
-          width={1440}
-          height={900}
+          width={width}
+          height={height}
         />
       </div>
       <figcaption className={styles.caption}>{caption}</figcaption>

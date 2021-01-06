@@ -1,25 +1,65 @@
 import Link from "next/link";
 
-import Layout from "../../components/layout.jsx";
+import Head from "../../components/head";
+import Layout from "../../components/layout";
+import Breadcrumbs from "../../components/breadcrumbs";
 import ImageWithCaption from "../../components/image-with-caption";
 
-# DHL Front End
-
-<ImageWithCaption
-  src="/citizens-advice.png"
-  altText="Some good altext"
-  caption="One of the simple, beautiful and accessible templates used  by Citizens Advice."
-/>
+# DHL Front End & AMP Templates
 
 Working as part of a team to complete the front end build using SASS and BEM to create an extendible and easily maintainable front end code base. Created a large selection of responsive and fast templates using modular HTML components, SCSS files and ES6 classes for a high-demand multi-lingual site.
 
-## Features
+## Front end
+
+<ImageWithCaption
+  src="/dhl.png"
+  altText="Some good altext"
+  caption="One of the simple, beautiful and accessible templates used  by Citizens Advice."
+  width={1440}
+  height={900}
+/>
+
+### Features
 
 - Semantic HTML
 - ES6 classes
 - Modular SASS using the BEM technique
 - VMWare, Webpack and node build tools used to create a fast and replicable front end build stack
 
-[See an example of the new Citizens Advice website](https://www.citizensadvice.org.uk/immigration)
+[Visit the DHL website](https://discover.dhl.com)
 
-export default ({ children }) => <Layout>{children}</Layout>;
+## AMP Templates
+
+After the success of the DHL front end build, I extended the modular HTML and SASS code base to create AMP compliant HTML templates and stylesheets. This was my first experience with AMP and required research into the benefits and restrictions to ensure the new markup was AMP valid and integrated properly into the CMS.
+
+<ImageWithCaption
+  src="/dhl-amp.png"
+  altText="Some good altext"
+  caption="One of the simple, beautiful and accessible templates used  by Citizens Advice."
+  width={411}
+  height={731}
+  portrait={true}
+/>
+
+### Development
+
+- research into AMP restrictions and requirements
+- extension of existing code base to provide AMP valid stylesheets
+- implementation of standardised AMP modules to provide navigation, carousel and accordion functionality
+- implementation of correct head meta tags
+
+[See an example of an AMP template for DHL](https://discover.dhl.com/business/market-intelligence/changing-chinese-shopping-habits/How-has-COVID-19-changed-Chinese-shopping-habits)
+
+export default ({ children }) => (
+  <Layout>
+    <Head pageTitle="Projects | DHL Front End" />
+    <Breadcrumbs
+      crumbs={[
+        { title: "Home", url: "/" },
+        { title: "Projects" },
+        { title: "DHL Front End" },
+      ]}
+    />
+    <main>{children}</main>
+  </Layout>
+);

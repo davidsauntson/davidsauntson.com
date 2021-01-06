@@ -7,6 +7,7 @@
   --color-purple-30pc: #ff9dff;
   --color-yellow: #ffff00;
   --color-charcoal: #333333;
+  --color-slate: #6c6c6c;
   --color-white: #fefefe;
 
   --color-stripe: var(--color-blue-30pc);
@@ -24,8 +25,8 @@
   --line-height: 1.8;
 }
 
-.stripes--purple {
-  --color-stripe: var(--color-purple-30pc);
+header {
+  --color-stripe: var(--color-blue-30pc);
 }
 
 /* Box sizing rules */
@@ -81,11 +82,9 @@ a:visited {
 a:focus {
   color: var(--color-charcoal);
   background-color: var(--color-yellow);
-  outline: none;
-}
-
-h1 {
-  color: var(--color-blue);
+  outline: 7px solid var(--color-yellow);
+  outline-offset: -1px;
+  border: none;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -94,6 +93,32 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+h3 small {
+  display: block;
+  color: var(--color-slate);
+}
+
+main {
+  margin-top: var(--spacing-xx-large);
+}
+
+hr {
+  margin: var(--spacing-xx-large) 0;
+  height: var(--spacing-medium);
+  border: none;
+  background-image: linear-gradient(
+    135deg,
+    var(--color-stripe) 6.25%,
+    var(--color-white) 6.25%,
+    var(--color-white) 50%,
+    var(--color-stripe) 50%,
+    var(--color-stripe) 56.25%,
+    var(--color-white) 56.25%,
+    var(--color-white) 100%
+  );
+  background-size: 11.31px 11.31px;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */

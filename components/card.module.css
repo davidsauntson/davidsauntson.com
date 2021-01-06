@@ -1,0 +1,30 @@
+.card,
+.card:link {
+  display: block;
+  padding: var(--spacing-large);
+  border: 1px solid var(--color-blue);
+  font-weight: 500;
+}
+
+.card:visited {
+  background-color: var(--color-purple);
+  border-color: var(--color-purple);
+}
+
+.card:visited:hover {
+  background-color: var(--color-purple);
+  border-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+.card:hover {
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.card:focus,
+.card:visited:focus {
+  background-color: var(--color-yellow);
+  color: var(--color-charcoal);
+}

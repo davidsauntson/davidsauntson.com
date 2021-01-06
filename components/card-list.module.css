@@ -1,0 +1,16 @@
+.cardList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardList__item {
+  display: block;
+  flex-basis: calc(50% - var(--spacing-large));
+  margin-right: var(--spacing-large);
+}
+
+.cardList__item:nth-child(n + 3) {
+  margin-top: var(--spacing-large);
+}
