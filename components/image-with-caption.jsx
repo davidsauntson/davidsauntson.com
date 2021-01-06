@@ -10,10 +10,12 @@ export default function ImageWithCaption({
   height,
   portrait
 }) {
-  const innerClasses = [styles.figure__inner];
+  const innerClasses = [styles.figure__inner, 'figure__inner'];
   if (portrait) {
     innerClasses.push(styles.portrait);
   }
+
+  const aspectRatio = height / width;
 
   return (
     <figure className={styles.figure}>
@@ -27,7 +29,7 @@ export default function ImageWithCaption({
           height={height}
         />
         <noscript>
-          <img alt={altText} height={height} width={width} src={src} />
+          <img alt={altText} height={300} width={300 * aspectRatio} src={src} />
         </noscript>
       </div>
       <figcaption className={styles.caption}>{caption}</figcaption>
