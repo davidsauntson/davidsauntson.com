@@ -7,28 +7,32 @@ import Breadcrumbs from "../../components/breadcrumbs";
 
 # Lord's Matchday Scorecard
 
-Replacing the existing episerver powered public website and internal advice dispensing tool, AdviserNet, with a modern ruby-on-rails and Contentful powered web app.
+A beautiful, performant and responsive live cricket scorecard app powered by React and Redux.
 
-Developing and maintaining a design system to ensure consistency of service across all Citizens Advice web sites and apps. Learning more about accessibility and ensuring the sites perform to the latest WCAG 2.1 AA standards.
+Using React and Redux to create a versatile app that processes an XML feed to provide live updates, statistics and commentary for the Lord's cricket website. Used on the site during live matches, the app performs well under exceptional demand. A polling module checks a constantly updating XML store to provide automatic updates to the scoring information.
+
+Interactive chart and 'wagonwheel' elements created by a custom canvas element show runs scored and direction of ball travel for each hit (I never learnt the cricket domain specific language, alas).
+
+The whole app is integrated into an existing content management system via a simple script tag inclusion on a specific template. An elegant and effective solution to a complex problem - delivered ahead of time and under budget.
 
 <ImageWithCaption
-  src="/ca.png"
-  altText="A page of the Citizens Advice website, showing how a simple but elegant layout gives focus to the content."
-  caption="One of the simple, beautiful and accessible templates used  by Citizens Advice.  I helped make it!"
+  src="/lords-matchday-react-scorecard.png"
+  altText="A clear and informative graph shows the cumulative number of runs in the Pakistan versus South Africa match."
+  caption="The stats page of the matchday scorecard, showing cumulative number of runs scored over the course of the match."
   width={1440}
   height={900}
 />
 
-[See an example of the new Citizens Advice website](https://www.citizensadvice.org.uk/immigration)
+[Play with the interactive scorecard](https://www.lords.org/lords/match-day/fixtures-and-results/2019/lords/international/pakistan-v-south-africa#/stats)
 
 export default ({ children }) => (
   <Layout>
-    <Head pageTitle="Projects | Citizens Advice" />
+    <Head pageTitle="Projects | Lord's Matchday Scorecard" />
     <Breadcrumbs
       crumbs={[
         { title: "Home", url: "/" },
         { title: "Projects" },
-        { title: "Citizens Advice Public Website" },
+        { title: "Lord's Matchday Scorecard" },
       ]}
     />
     <main id="main-content">{children}</main>

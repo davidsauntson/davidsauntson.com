@@ -8,11 +8,15 @@ export const config = { amp: false };
 export default function Home() {
   const projects = [
     {
+      title: 'This Very Website',
+      stub: 'my-website'
+    },
+    {
       title: 'Citizens Advice Public Website',
       stub: 'citizens-advice-public-website'
     },
     {
-      title: 'DHL Component Library & AMP Templates',
+      title: 'DHL Component Library',
       stub: 'dhl-front-end'
     },
     {
@@ -22,10 +26,6 @@ export default function Home() {
     {
       title: 'Kahicool Brochure Site',
       stub: 'kahicool-cms-build'
-    },
-    {
-      title: 'This website',
-      stub: 'my-website'
     }
   ];
 
@@ -92,11 +92,10 @@ export default function Home() {
                 </li>
                 <li>
                   created a React / Redux microsite template, hosted in Azure
-                  used
                 </li>
                 <li>
-                  BitBucket pipelines and nightwatch.js to automate deployment
-                  and testing
+                  used BitBucket pipelines and nightwatch.js to automate
+                  deployment and testing
                 </li>
               </ul>
             </li>

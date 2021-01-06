@@ -2,7 +2,8 @@
 
 :root {
   --color-blue: #0000ff;
-  --color-blue-30pc: #d8d8ff;
+  --color-blue-30pc: #c4c4ff;
+  --color-blue-20pc: #d8d8ff;
   --color-blue-10pc: #ebebff;
   --color-purple: #cb00cb;
   --color-purple-30pc: #ff9dff;
@@ -27,7 +28,7 @@
 }
 
 header {
-  --color-stripe: var(--color-blue-10pc);
+  --color-stripe: var(--color-blue-20pc);
 }
 
 /* Box sizing rules */

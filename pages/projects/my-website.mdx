@@ -7,28 +7,34 @@ import Breadcrumbs from "../../components/breadcrumbs";
 
 # My website
 
-Replacing the existing episerver powered public website and internal advice dispensing tool, AdviserNet, with a modern ruby-on-rails and Contentful powered web app.
+Stuck in lockdown 3.0 with a week of annual leave to use up, I decided to play with a(nother) React framework and static site generation.
 
-Developing and maintaining a design system to ensure consistency of service across all Citizens Advice web sites and apps. Learning more about accessibility and ensuring the sites perform to the latest WCAG 2.1 AA standards.
+This site is built using <code>next.js</code>, and hosted and deployed using Vercel. I have kept the design and simple, fun and clear, whilst implementing as many accessibility features as I can.
 
 <ImageWithCaption
-  src="/ca.png"
-  altText="A page of the Citizens Advice website, showing how a simple but elegant layout gives focus to the content."
-  caption="One of the simple, beautiful and accessible templates used  by Citizens Advice.  I helped make it!"
+  src="/davidsauntson.png"
+  altText="A clear and simple home page that focuses on clear and accessible content."
+  caption="The homepage of this actual site, showing an emphasis on content and accessibility."
   width={1440}
   height={900}
 />
 
-[See an example of the new Citizens Advice website](https://www.citizensadvice.org.uk/immigration)
+## Fun things I used to build this site
+
+- <code>next.js</code> and Vercel
+- MDX and CSS modules
+- no custom javascript
+- image optimisation
+- [alt text as poetry](https://alt-text-as-poetry.net/)
 
 export default ({ children }) => (
   <Layout>
-    <Head pageTitle="Projects | Citizens Advice" />
+    <Head pageTitle="Projects | My Website" />
     <Breadcrumbs
       crumbs={[
         { title: "Home", url: "/" },
         { title: "Projects" },
-        { title: "Citizens Advice Public Website" },
+        { title: "My Website (this one)" },
       ]}
     />
     <main id="main-content">{children}</main>
