@@ -31,9 +31,9 @@ export default function Home() {
 
   return (
     <>
-      <Head />
+      <Head pageTitle="Home" />
       <Layout>
-        <main>
+        <main id="main-content">
           <h2>Intro</h2>
           <p>
             A talented and enthusiastic front end developer with eight years’
@@ -41,6 +41,7 @@ export default function Home() {
             and experienced at creating high fidelity front end builds, content
             managed sites, performant React/Redux and .NET MVC web applications.
           </p>
+          <p>He/him.</p>
           <hr />
           <h2>Things I have worked on</h2>
           <CardList cards={projects} />

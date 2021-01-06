@@ -7,14 +7,14 @@ import ImageWithCaption from "../../components/image-with-caption";
 
 # DHL Front End & AMP Templates
 
-Working as part of a team to complete the front end build using SASS and BEM to create an extendible and easily maintainable front end code base. Created a large selection of responsive and fast templates using modular HTML components, SCSS files and ES6 classes for a high-demand multi-lingual site.
+Working the very wonderful and talented [Abigail Norris](https://abigailnorris.carbonmade.com/) to complete the front end build using SASS and BEM to create an extendible and easily maintainable front end code base. Created a large selection of responsive and fast templates using modular HTML components, SCSS files and ES6 classes for a high-demand multi-lingual site.
 
 ## Front end
 
 <ImageWithCaption
   src="/dhl.png"
-  altText="Some good altext"
-  caption="One of the simple, beautiful and accessible templates used  by Citizens Advice."
+  altText="The hero section of a lovely DHL Discover article page.  A graphic representation of a logistics centre lends context to the bold and engaging article headline."
+  caption="The DHL hero component, in situ on an article page template."
   width={1440}
   height={900}
 />
@@ -60,6 +60,6 @@ export default ({ children }) => (
         { title: "DHL Front End" },
       ]}
     />
-    <main>{children}</main>
+    <main id="main-content">{children}</main>
   </Layout>
 );
