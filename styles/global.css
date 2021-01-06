@@ -133,3 +133,7 @@ hr {
     scroll-behavior: auto !important;
   }
 }
+
+.no-js .figure__inner div {
+  display: none;
+}

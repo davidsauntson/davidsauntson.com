@@ -6,6 +6,7 @@ export default function DSHead({ pageTitle }) {
       <title>David Sauntson | {pageTitle}</title>
       <link rel="icon" href="/favicon.ico" />
       <meta name="robots" content="noindex, nofollow" />
+      <script>document.querySelector('html').classList.remove('no-js');</script>
     </Head>
   );
 }

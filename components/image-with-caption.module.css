@@ -7,6 +7,7 @@
 
 .figure__inner {
   margin: var(--spacing-xx-large);
+  position: relative;
 }
 
 .caption {
