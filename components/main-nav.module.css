@@ -1,0 +1,32 @@
+.nav {
+  margin: 1rem 0;
+  margin-left: calc(-1 * var(--spacing-medium));
+}
+
+.nav__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  background-color: var(--color-blue);
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav__link,
+.nav__link:visited {
+  display: block;
+  color: var(--color-white);
+  padding: var(--spacing-small) var(--spacing-medium);
+}
+
+.nav__link:focus {
+  color: var(--color-charcoal);
+}

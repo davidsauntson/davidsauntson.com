@@ -1,0 +1,12 @@
+.header {
+  padding: calc(2 * var(--spacing-xx-large)) 0 var(--spacing-x-large) 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.navWrapper {
+  background-color: var(--color-white);
+}

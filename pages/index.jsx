@@ -15,24 +15,23 @@ export default function Home() {
 
       <Layout>
         <main>
-          <h1>David Sauntson</h1>
           <h2>About me</h2>
           <p>
             A talented and enthusiastic front end developer with eight years’
             commercial experience and an MSc in Software Engineering. Skilled
             and experienced at creating high fidelity front end builds, content
-            managed sites, performant React/Redux and SaaS applications.
+            managed sites, performant React/Redux and .NET MVC web applications.
           </p>
           <h2>Things I have worked on</h2>
           <nav aria-label="projects">
             <ul>
               <li>
-                <Link href="/">
+                <Link href="/projects/citizens-advice-public-website">
                   <a>Citizens Advice public website</a>
                 </Link>
               </li>
               <li>
-                <Link href="/">
+                <Link href="/projects/dhl-front-end">
                   <a>Front end template and component library for DHL</a>
                 </Link>
               </li>

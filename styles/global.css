@@ -1,3 +1,33 @@
+/* VARS */
+
+:root {
+  --color-blue: #0000ff;
+  --color-blue-30pc: #c4c4ff;
+  --color-purple: #cb00cb;
+  --color-purple-30pc: #ff9dff;
+  --color-yellow: #ffff00;
+  --color-charcoal: #333333;
+  --color-white: #fefefe;
+
+  --color-stripe: var(--color-blue-30pc);
+
+  --font-size-small: 16px;
+  --font-size: 18px;
+
+  --spacing-x-small: 4px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-x-large: 32px;
+  --spacing-xx-large: 64px;
+
+  --line-height: 1.8;
+}
+
+.stripes--purple {
+  --color-stripe: var(--color-purple-30pc);
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -27,10 +57,10 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
-  color: #333333;
-  background-color: #fefefe;
+  line-height: var(--line-height);
+  font-size: var(--font-size);
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
 }
 
 /* Make images easier to work with */
@@ -41,17 +71,21 @@ picture {
 }
 
 a {
-  color: #0000ff;
+  color: var(--color-blue);
 }
 
 a:visited {
-  color: #cb00cb;
+  color: var(--color-purple);
 }
 
 a:focus {
-  color: #333333;
-  background-color: #ffff00;
+  color: var(--color-charcoal);
+  background-color: var(--color-yellow);
   outline: none;
+}
+
+h1 {
+  color: var(--color-blue);
 }
 
 /* Inherit fonts for inputs and buttons */
