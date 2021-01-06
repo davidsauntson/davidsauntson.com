@@ -26,6 +26,9 @@ export default function ImageWithCaption({
           width={width}
           height={height}
         />
+        <noscript>
+          <img alt={altText} height={height} width={width} src={src} />
+        </noscript>
       </div>
       <figcaption className={styles.caption}>{caption}</figcaption>
     </figure>
