@@ -134,6 +134,6 @@ hr {
   }
 }
 
-.no-js .figure__inner div {
-  display: none;
+.no-js .figure__inner div[style*="display:block"] {
+  display: none !important;
 }
