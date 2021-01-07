@@ -5,7 +5,7 @@ import styles from './footer.module.css';
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer id="footer" className={styles.footer}>
       <Container>
         <small>This website is a cookie free zone.</small>
         <small>
