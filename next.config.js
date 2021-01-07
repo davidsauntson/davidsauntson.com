@@ -2,6 +2,14 @@ const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/
 });
 
+const defaultSrc = "default-src 'self'";
+const scriptSrc = "script-src 'self' 'unsafe-inline' 'unsafe-eval'";
+const styleSrc = "style-src 'self' 'unsafe-inline'";
+const connectSrc = "connect-src 'self' vitals.vercel-insights.com";
+const childSrc = "child-src 'none'";
+const objectSrc = "object-src 'none'";
+const imageSrc = "img-src 'self' data:";
+
 module.exports = withMDX({
   pageExtensions: ['js', 'jsx', 'mdx'],
 
@@ -12,8 +20,29 @@ module.exports = withMDX({
         headers: [
           {
             key: 'Content-Security-Policy',
-            value:
-              "default-src 'self' data: 'unsafe-eval' 'unsafe-inline' vitals.vercel-insights.com; child-src 'none'; object-src 'none'"
+            value: `${defaultSrc}; ${scriptSrc}; ${styleSrc}; ${connectSrc}; ${childSrc}; ${objectSrc}; ${imageSrc};`
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN'
+          },
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'Referrer-Policy', value: 'same-origin' },
+          {
+            key: 'Feature-Policy',
+            value: "geolocation 'none'; camera: 'none'; microphone: 'none';"
+          },
+          {
+            key: 'Permissions-Policy',
+            value: "geolocation 'none'; camera: 'none'; microphone: 'none';"
+          },
+          {
+            key: 'X-Xss-Protection',
+            value: '1; mode=block always;'
+          },
+          {
+            key: 'access-control-allow-origin',
+            value: 'https://www.davidsauntson.com'
           }
         ]
       }
