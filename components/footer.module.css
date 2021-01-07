@@ -1,0 +1,6 @@
+.footer {
+  composes: stripes from "./tools.module.css";
+
+  padding: var(--spacing-x-large) 0;
+  margin-top: var(--spacing-xx-large);
+}

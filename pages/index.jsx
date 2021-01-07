@@ -159,7 +159,6 @@ export default function Home() {
             Assisted on a variety of small - medium sized web sites using .NET
             and Kenitco CMS.
           </p>
-          <hr />
         </main>
       </Layout>
     </>

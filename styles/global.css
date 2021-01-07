@@ -31,6 +31,14 @@ header {
   --color-stripe: var(--color-blue-20pc);
 }
 
+footer {
+  --color-stripe: var(--color-blue-10pc);
+}
+
+footer small {
+  display: block;
+}
+
 /* Box sizing rules */
 *,
 *::before,

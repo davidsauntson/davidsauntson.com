@@ -1,6 +1,7 @@
 import Header from './header';
 import Container from './container';
 import Skiplinks from './skiplinks';
+import Footer from './footer';
 
 export default function Layout({ children }) {
   return (
@@ -10,6 +11,7 @@ export default function Layout({ children }) {
       </Container>
       <Header />
       <Container>{children}</Container>
+      <Footer />
     </>
   );
 }
