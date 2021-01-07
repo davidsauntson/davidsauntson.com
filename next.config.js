@@ -11,7 +11,7 @@ module.exports = withMDX({
         source: '/',
         headers: [
           {
-            key: 'Content-Security-Policy-Report-Only',
+            key: 'Content-Security-Policy',
             value:
               "default-src 'self' data: 'unsafe-eval' 'unsafe-inline'; child-src 'none'; object-src 'none'"
           }
