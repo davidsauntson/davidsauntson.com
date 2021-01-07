@@ -6,8 +6,15 @@
 }
 
 .figure__inner {
-  margin: var(--spacing-xx-large);
   position: relative;
+
+  margin: var(--spacing-medium);
+}
+
+@media screen and (min-width: 620px) {
+  .figure__inner {
+    margin: var(--spacing-xx-large);
+  }
 }
 
 .caption {

@@ -7,8 +7,12 @@
 
 .cardList__item {
   display: block;
-  flex-basis: calc(50% - var(--spacing-large));
+  flex-basis: calc(50% - var(--spacing-large) / 2);
   margin-right: var(--spacing-large);
+}
+
+.cardList__item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .cardList__item:nth-child(n + 3) {
