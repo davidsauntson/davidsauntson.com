@@ -21,9 +21,14 @@ A large part of my role is developing and maintaining a design system to ensure 
 
 [See an example of the new Citizens Advice website](https://www.citizensadvice.org.uk/immigration)
 
+export const meta = {
+  description:
+    "Rebuilding the Citizens Advice website using a design system and focussing on accessibility.",
+};
+
 export default ({ children }) => (
   <Layout>
-    <Head pageTitle="Projects, Citizens Advice" />
+    <Head pageTitle="Projects, Citizens Advice" meta={meta} />
     <Breadcrumbs
       crumbs={[
         { title: "Home", url: "/" },

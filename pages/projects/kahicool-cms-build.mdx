@@ -21,9 +21,14 @@ Clear calls to action, interactive product galleries and engaing photography are
 
 [Explore the Kahicool site](https://www.kahicool.com)
 
+export const meta = {
+  description:
+    "Creating a simple, fast and beautiful content managed site for Kahicool.",
+};
+
 export default ({ children }) => (
   <Layout>
-    <Head pageTitle="Projects, Kahicool" />
+    <Head pageTitle="Projects, Kahicool" meta={meta} />
     <Breadcrumbs
       crumbs={[
         { title: "Home", url: "/" },

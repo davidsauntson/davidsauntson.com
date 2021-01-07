@@ -31,9 +31,14 @@ This site is built using <code>next.js</code>, and hosted and deployed using Ver
 - image optimisation
 - [alt text as poetry](https://alt-text-as-poetry.net/)
 
+export const meta = {
+  description:
+    "Developing a new personal website using next.js and CSS modules.",
+};
+
 export default ({ children }) => (
   <Layout>
-    <Head pageTitle="Projects, My Website" />
+    <Head pageTitle="Projects, My Website" meta={meta} />
     <Breadcrumbs
       crumbs={[
         { title: "Home", url: "/" },

@@ -26,12 +26,21 @@ export default function Home() {
     {
       title: 'Kahicool Brochure Site',
       stub: 'kahicool-cms-build'
+    },
+    {
+      title: 'Nassari 360 .NET MVC App',
+      stub: 'nassari-360'
     }
   ];
 
+  const meta = {
+    description:
+      'A talented and enthusiastic front end developer with over 8 years of commercial experience.'
+  };
+
   return (
     <>
-      <Head pageTitle="Home" />
+      <Head pageTitle="Home" meta={meta} />
       <Layout>
         <main id="main-content">
           <h2>Intro</h2>

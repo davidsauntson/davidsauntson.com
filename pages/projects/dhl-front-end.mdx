@@ -50,9 +50,14 @@ After the success of the DHL front end build, I extended the modular HTML and SA
 
 [See an example of an AMP template for DHL](https://discover.dhl.com/business/market-intelligence/changing-chinese-shopping-habits/How-has-COVID-19-changed-Chinese-shopping-habits)
 
+export const meta = {
+  description:
+    "Converting designs into a front end template and component library for DHL's website.",
+};
+
 export default ({ children }) => (
   <Layout>
-    <Head pageTitle="Projects, DHL Front End" />
+    <Head pageTitle="Projects, DHL Front End" meta={meta} />
     <Breadcrumbs
       crumbs={[
         { title: "Home", url: "/" },
