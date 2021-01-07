@@ -30,7 +30,7 @@ module.exports = withMDX({
           { key: 'Referrer-Policy', value: 'same-origin' },
           {
             key: 'Feature-Policy',
-            value: "geolocation 'none'; camera: 'none'; microphone: 'none';"
+            value: "geolocation 'none';"
           },
           {
             key: 'Permissions-Policy',
