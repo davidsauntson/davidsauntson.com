@@ -26,8 +26,14 @@ module.exports = withMDX({
             key: 'X-Frame-Options',
             value: 'SAMEORIGIN'
           },
-          { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'Referrer-Policy', value: 'same-origin' },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff'
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'same-origin'
+          },
           {
             key: 'Feature-Policy',
             value: "geolocation 'none';"
