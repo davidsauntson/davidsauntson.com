@@ -20,6 +20,11 @@ export default function DSHead({ pageTitle, meta }) {
             return <meta key={key} name={key} content={meta[key]} />;
           })
         : null}
+
+      <meta
+        name="google-site-verification"
+        content="RtsUf9TBOP1dgie4Ge4xDaB-xE1Jp8anjxkMqOUSoQo"
+      />
       <script
         type="application/javascript"
         dangerouslySetInnerHTML={{ __html: noJsScript }}
