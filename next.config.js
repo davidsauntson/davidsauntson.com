@@ -13,7 +13,7 @@ module.exports = withMDX({
           {
             key: 'Content-Security-Policy',
             value:
-              "default-src 'self' data: 'unsafe-eval' 'unsafe-inline' 'vitals/vercel-insights.com'; child-src 'none'; object-src 'none'"
+              "default-src 'self' data: 'unsafe-eval' 'unsafe-inline' 'vitals.vercel-insights.com'; child-src 'none'; object-src 'none'"
           }
         ]
       }
