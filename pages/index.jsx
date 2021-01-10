@@ -42,7 +42,7 @@ export default function Home() {
     <>
       <Head pageTitle="Home" meta={meta} />
       <Layout>
-        <main id="main-content">
+        <main id="main-content" className="content">
           <h2>Intro</h2>
           <p>
             A talented and enthusiastic front end developer with eight years’
@@ -68,11 +68,8 @@ export default function Home() {
           </ul>
           <hr />
           <h2>Career</h2>
-          <h3>
-            Senior Front End Developer - Citizens Advice
-            <small>August 2020 onwards</small>
-          </h3>
-
+          <h3>Senior Front End Developer - Citizens Advice</h3>
+          <small>August 2020 onwards</small>
           <p>
             Working on a project to replace our current episerver powered
             website with a Contentful / Ruby on Rails app. Developing and
@@ -80,10 +77,8 @@ export default function Home() {
             Citizens Advice web sites and apps.
           </p>
           <p />
-          <h3>
-            Director - Landd Agency & David Sauntson Ltd
-            <small>October 2015 - August 2020</small>
-          </h3>
+          <h3>Director - Landd Agency & David Sauntson Ltd</h3>
+          <small>October 2015 - August 2020</small>
           <p>
             Acting as a contractor for various companies. Highlights include:
           </p>
@@ -151,18 +146,14 @@ export default function Home() {
               </ul>
             </li>
           </ul>
-          <h3>
-            Senior Developer - Positive Technology
-            <small>January 2014 - September 2015</small>
-          </h3>
+          <h3>Senior Developer - Positive Technology</h3>
+          <small>January 2014 - September 2015</small>
           <p>
             Assumed a broader range of development responsibilities, including
             leading on small to medium sized web build projects.
           </p>
-          <h3>
-            Junior Developer - Positive Technology
-            <small>October 2012 - January 2014</small>
-          </h3>
+          <h3>Junior Developer - Positive Technology</h3>
+          <small>October 2012 - January 2014</small>
           <p>
             Assisted on a variety of small - medium sized web sites using .NET
             and Kenitco CMS.
