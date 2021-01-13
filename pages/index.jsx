@@ -50,7 +50,9 @@ export default function Home() {
             and experienced at creating high fidelity front end builds, content
             managed sites, performant React/Redux and .NET MVC web applications.
           </p>
-          <p>He/him.</p>
+          <p>
+            My pronouns are <a href="https://name.pn/david-sauntson">he/him</a>.
+          </p>
           <hr />
           <h2>Things I have worked on</h2>
           <CardList cards={projects} />
