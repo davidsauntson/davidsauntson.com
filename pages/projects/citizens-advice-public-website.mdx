@@ -29,13 +29,6 @@ export const meta = {
 export default ({ children }) => (
   <Layout>
     <Head pageTitle="Projects, Citizens Advice" meta={meta} />
-    <Breadcrumbs
-      crumbs={[
-        { title: "Home", url: "/" },
-        { title: "Projects" },
-        { title: "Citizens Advice Public Website" },
-      ]}
-    />
     <main id="main-content">{children}</main>
   </Layout>
 );

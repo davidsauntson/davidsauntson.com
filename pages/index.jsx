@@ -2,37 +2,11 @@ import Head from "../components/head";
 
 import CardList from "../components/card-list";
 import Layout from "../components/layout";
+import projects from "../data/projects";
 
 export const config = { amp: false };
 
 export default function Home() {
-  const projects = [
-    {
-      title: "This Very Website",
-      stub: "my-website",
-    },
-    {
-      title: "Citizens Advice Public Website",
-      stub: "citizens-advice-public-website",
-    },
-    {
-      title: "DHL Component Library",
-      stub: "dhl-front-end",
-    },
-    {
-      title: "Lord's Matchday Scorecard",
-      stub: "lords-scorecard",
-    },
-    {
-      title: "Kahicool Brochure Site",
-      stub: "kahicool-cms-build",
-    },
-    {
-      title: "Nassari 360 .NET MVC App",
-      stub: "nassari-360",
-    },
-  ];
-
   const meta = {
     description:
       "A talented and enthusiastic front end developer with over 8 years of commercial experience.",

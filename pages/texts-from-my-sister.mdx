@@ -1,0 +1,39 @@
+import Link from "next/link";
+
+import Head from "../components/head";
+import Layout from "../components/layout";
+import Breadcrumbs from "../components/breadcrumbs";
+
+# Texts from my sister
+
+My sister sends me great texts. Often they don't make any sense, sometimes they do. Sometimes they are reviews of Star Trek episodes.
+
+I present them to you, unedited. Various content and trigger warnings will apply.
+
+## 10:03 - Friday 23 April, 2021
+
+> Captain P was shot and his metal heart stopped working - i was surprised that it looked like a heart, but just metal - he went back through his life with Q(??) and changed key events ...which involved him shagging his mates girlfriend- convenient... and was then surprised when he returned back to the current day and his life was different. I jean, I know nothing about time travel other than thing have knock on effects! And he's a starship captain. In the end he woke up from the ginger dr magic healthcare provision and he couldn't figure out whether it happened or not... which is the same sensation I have when I htink about when I watch this show. What did it prove tho was there is a no nepotism in the federation(?) as even when he went back as a lower ranking officer all the other staff were the same. They must have a very transparent recruitment policy.
+
+## 07:57 - Thursday 22 April, 2021
+
+> so today, dana?? from Tottenham played dress up and had an awful cosmetic procedure to become a rom-something. she took over a big ship that has some men sleeping elaborate coffins in the storage room. at one point she tricket the enterprise into lowering their shields and beamed them over in a green beam that was supposed to be a weapon but she had disgusted as a transport beam. So my questions is 0 how on eath does she know how to do this? i thought she was on boart as she knows how people think...yet she also seems to have a minor in beam engineering. today's episode v boring - maybe 2/10 total score. i think this is why i never watched this as a kid. the dog is the best one so far.
+
+## 07:59 - Wednesday 21 April, 2021
+
+> so today, the bloke that i think is called jordie, not georgie, and the sub captain found a dog - which was rather exciting. i then stopped watching whilst I got a shower. when i came back some red stuff on a plate had made the ginger dr hand - v clever.
+> so today, the bloke that i think is called jordie, not georgie, and the sub captain found a dog - which was rather exciting. i then stopped watching whilst I got a shower. when i came back some red stuff on a plate had made the ginger dr hand - v clever.
+
+## 07:45 - Tuesday 20 April, 2021
+
+> morning jean! in todays voyager the marqueeeeee people took over the ship and wore casual clothes..they were very angrey for no real reason and only listened to their own opinions. the other one is still on and v boring - something to do with moriarty wanting not to be a hologram and is holding picard hostage (seems to be a running theme) within a holodeck programme.
+
+export const meta = {
+  description: "Unedited texts from my sister",
+};
+
+export default ({ children }) => (
+  <Layout>
+    <Head pageTitle="Unedited texts from my sister" meta={meta} />
+    <main id="main-content">{children}</main>
+  </Layout>
+);

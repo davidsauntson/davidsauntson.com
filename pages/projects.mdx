@@ -1,0 +1,31 @@
+import Link from "next/link";
+
+import Head from "../components/head";
+import Layout from "../components/layout";
+import Breadcrumbs from "../components/breadcrumbs";
+
+import projects from "../data/projects.js";
+
+export default function Projects({ children }) {
+  const meta = {
+    description: "Projects I have worked on",
+  };
+  return (
+    <Layout>
+      <Head pageTitle="Projects" meta={meta} />
+      <main id="main-content">
+        <h1>Projects</h1>
+        <p>Here is a list of projects I have worked on:</p>
+        <ul>
+          {projects.map((p) => {
+            return (
+              <li>
+                <a href={`/projects/${p.stub}`}>{p.title}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </main>
+    </Layout>
+  );
+}
