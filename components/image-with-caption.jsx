@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import styles from './image-with-caption.module.css';
+import styles from "./image-with-caption.module.css";
 
 export default function ImageWithCaption({
   src,
@@ -8,9 +8,9 @@ export default function ImageWithCaption({
   altText,
   width,
   height,
-  portrait
+  portrait,
 }) {
-  const innerClasses = [styles.figure__inner, 'figure__inner'];
+  const innerClasses = [styles.figure__inner, "figure__inner"];
   if (portrait) {
     innerClasses.push(styles.portrait);
   }
@@ -19,7 +19,7 @@ export default function ImageWithCaption({
 
   return (
     <figure className={styles.figure}>
-      <div className={innerClasses.join(' ')}>
+      <div className={innerClasses.join(" ")}>
         <Image
           className={styles.image}
           src={src}
@@ -28,15 +28,6 @@ export default function ImageWithCaption({
           width={width}
           height={height}
         />
-        <noscript>
-          <img
-            alt={altText}
-            height={300}
-            width={300 * aspectRatio}
-            src={src}
-            className={styles.image}
-          />
-        </noscript>
       </div>
       <figcaption className={styles.caption}>{caption}</figcaption>
     </figure>

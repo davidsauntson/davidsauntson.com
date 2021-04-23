@@ -1,9 +1,9 @@
-const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/
+const withMDX = require("@next/mdx")({
+  extension: /\.mdx?$/,
 });
 
 const defaultSrc = "default-src 'self'";
-const scriptSrc = "script-src 'self' 'unsafe-inline' 'unsafe-eval'";
+const scriptSrc = "script-src 'self'";
 const styleSrc = "style-src 'self' 'unsafe-inline'";
 const connectSrc = "connect-src 'self' vitals.vercel-insights.com";
 const childSrc = "child-src 'none'";
@@ -11,47 +11,47 @@ const objectSrc = "object-src 'none'";
 const imageSrc = "img-src 'self' data:";
 
 module.exports = withMDX({
-  pageExtensions: ['js', 'jsx', 'mdx'],
+  pageExtensions: ["js", "jsx", "mdx"],
 
   async headers() {
     return [
       {
-        source: '/',
+        source: "/",
         headers: [
           {
-            key: 'Content-Security-Policy',
-            value: `${defaultSrc}; ${scriptSrc}; ${styleSrc}; ${connectSrc}; ${childSrc}; ${objectSrc}; ${imageSrc};`
+            key: "Content-Security-Policy",
+            value: `${defaultSrc}; ${scriptSrc}; ${styleSrc}; ${connectSrc}; ${childSrc}; ${objectSrc}; ${imageSrc};`,
           },
           {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN'
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
           },
           {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff'
+            key: "X-Content-Type-Options",
+            value: "nosniff",
           },
           {
-            key: 'Referrer-Policy',
-            value: 'same-origin'
+            key: "Referrer-Policy",
+            value: "same-origin",
           },
           {
-            key: 'Feature-Policy',
-            value: "geolocation 'none';"
+            key: "Feature-Policy",
+            value: "geolocation 'none';",
           },
           {
-            key: 'Permissions-Policy',
-            value: "geolocation 'none'; camera: 'none'; microphone: 'none';"
+            key: "Permissions-Policy",
+            value: "geolocation 'none'; camera: 'none'; microphone: 'none';",
           },
           {
-            key: 'X-Xss-Protection',
-            value: '1; mode=block always;'
+            key: "X-Xss-Protection",
+            value: "1; mode=block always;",
           },
           {
-            key: 'access-control-allow-origin',
-            value: 'https://www.davidsauntson.com'
-          }
-        ]
-      }
+            key: "access-control-allow-origin",
+            value: "https://www.davidsauntson.com",
+          },
+        ],
+      },
     ];
-  }
+  },
 });
