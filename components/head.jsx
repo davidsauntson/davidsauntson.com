@@ -1,14 +1,11 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 export default function DSHead({ pageTitle, meta }) {
-  const noJsScript =
-    'document.querySelector("html").classList.remove("no-js");';
-
   const baseMeta = {};
 
   const mergedMeta = {
     ...baseMeta,
-    ...meta
+    ...meta,
   };
 
   return (
@@ -16,7 +13,7 @@ export default function DSHead({ pageTitle, meta }) {
       <title>David Sauntson, {pageTitle}</title>
       <link rel="icon" href="/favicon.ico" />
       {mergedMeta
-        ? Object.keys(mergedMeta).map(key => {
+        ? Object.keys(mergedMeta).map((key) => {
             return <meta key={key} name={key} content={meta[key]} />;
           })
         : null}
@@ -24,10 +21,6 @@ export default function DSHead({ pageTitle, meta }) {
       <meta
         name="google-site-verification"
         content="RtsUf9TBOP1dgie4Ge4xDaB-xE1Jp8anjxkMqOUSoQo"
-      />
-      <script
-        type="application/javascript"
-        dangerouslySetInnerHTML={{ __html: noJsScript }}
       />
     </Head>
   );

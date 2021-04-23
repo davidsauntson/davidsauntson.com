@@ -143,10 +143,6 @@ hr {
   }
 }
 
-.no-js .figure__inner div[style*="display:block"] {
-  display: none !important;
-}
-
 .content h3 {
   margin-bottom: var(--spacing-xx-small);
   margin-top: var(--spacing-x-large);
