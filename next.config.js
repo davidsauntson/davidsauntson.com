@@ -40,7 +40,7 @@ module.exports = withMDX({
           },
           {
             key: "Permissions-Policy",
-            value: "geolocation 'none'; camera 'none'; microphone 'none';",
+            value: "geolocation=(), microphone=(), camera=();",
           },
           {
             key: "X-Xss-Protection",
