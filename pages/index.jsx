@@ -1,41 +1,41 @@
-import Head from '../components/head';
+import Head from "../components/head";
 
-import CardList from '../components/card-list';
-import Layout from '../components/layout';
+import CardList from "../components/card-list";
+import Layout from "../components/layout";
 
 export const config = { amp: false };
 
 export default function Home() {
   const projects = [
     {
-      title: 'This Very Website',
-      stub: 'my-website'
+      title: "This Very Website",
+      stub: "my-website",
     },
     {
-      title: 'Citizens Advice Public Website',
-      stub: 'citizens-advice-public-website'
+      title: "Citizens Advice Public Website",
+      stub: "citizens-advice-public-website",
     },
     {
-      title: 'DHL Component Library',
-      stub: 'dhl-front-end'
+      title: "DHL Component Library",
+      stub: "dhl-front-end",
     },
     {
       title: "Lord's Matchday Scorecard",
-      stub: 'lords-scorecard'
+      stub: "lords-scorecard",
     },
     {
-      title: 'Kahicool Brochure Site',
-      stub: 'kahicool-cms-build'
+      title: "Kahicool Brochure Site",
+      stub: "kahicool-cms-build",
     },
     {
-      title: 'Nassari 360 .NET MVC App',
-      stub: 'nassari-360'
-    }
+      title: "Nassari 360 .NET MVC App",
+      stub: "nassari-360",
+    },
   ];
 
   const meta = {
     description:
-      'A talented and enthusiastic front end developer with over 8 years of commercial experience.'
+      "A talented and enthusiastic front end developer with over 8 years of commercial experience.",
   };
 
   return (
@@ -51,11 +51,13 @@ export default function Home() {
             managed sites, performant React/Redux and .NET MVC web applications.
           </p>
           <p>
-            My pronouns are <a href="https://name.pn/david-sauntson">he/him</a>.
+            <a href="https://name.pn/david-sauntson">My pronouns are he/him</a>.
           </p>
           <hr />
           <h2>Things I have worked on</h2>
-          <CardList cards={projects} />
+          <nav aria-label="Project menu">
+            <CardList cards={projects} />
+          </nav>
           <hr />
           <h2>Education</h2>
           <ul>
