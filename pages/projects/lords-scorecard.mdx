@@ -33,13 +33,6 @@ export const meta = {
 export default ({ children }) => (
   <Layout>
     <Head pageTitle="Projects, Lord's Matchday Scorecard" meta={meta} />
-    <Breadcrumbs
-      crumbs={[
-        { title: "Home", url: "/" },
-        { title: "Projects" },
-        { title: "Lord's Matchday Scorecard" },
-      ]}
-    />
     <main id="main-content">{children}</main>
   </Layout>
 );

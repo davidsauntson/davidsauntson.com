@@ -15,6 +15,11 @@ const MainNav = () => {
             <a className={navStyles.nav__link}>Projects</a>
           </Link>
         </li>
+        <li className={navStyles.nav__item}>
+          <Link href="/texts-from-my-sister">
+            <a className={navStyles.nav__link}>Texts from my sister</a>
+          </Link>
+        </li>
       </ul>
     </nav>
   );

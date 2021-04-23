@@ -15,8 +15,6 @@ export default function ImageWithCaption({
     innerClasses.push(styles.portrait);
   }
 
-  const aspectRatio = width / height;
-
   return (
     <figure className={styles.figure}>
       <div className={innerClasses.join(" ")}>
