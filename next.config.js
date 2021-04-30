@@ -36,11 +36,11 @@ module.exports = withMDX({
           },
           {
             key: "Feature-Policy",
-            value: "geolocation 'none';",
+            value: "geolocation 'none'",
           },
           {
             key: "Permissions-Policy",
-            value: "geolocation=(), microphone=(), camera=();",
+            value: "geolocation=(), microphone=(), camera=()",
           },
           {
             key: "X-Xss-Protection",
