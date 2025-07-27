@@ -8,11 +8,11 @@ export default function Skiplinks() {
   const currentUrl = router.pathname;
   return (
     <nav aria-label="skip links">
-      <Link href={`${currentUrl}#main-content`}>
-        <a className={styles.skiplink}>Skip to main content</a>
+      <Link className={styles.skiplink} href={`${currentUrl}#main-content`}>
+        Skip to main content
       </Link>
-      <Link href={`${currentUrl}#footer`}>
-        <a className={styles.skiplink}>Skip to footer</a>
+      <Link className={styles.skiplink} href={`${currentUrl}#footer`}>
+        Skip to footer
       </Link>
     </nav>
   );

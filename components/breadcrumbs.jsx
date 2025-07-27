@@ -13,7 +13,7 @@ export default function Breadcrumbs({ crumbs }) {
             <li className={styles.breadcrumbs__item} key={shortid.generate()}>
               {url ? (
                 <Link href={url}>
-                  <a>{title}</a>
+                  {title}
                 </Link>
               ) : (
                 <span>{title}</span>
