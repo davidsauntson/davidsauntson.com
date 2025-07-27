@@ -7,12 +7,12 @@ const MainNav = () => {
       <ul className={[navStyles.nav__list].join(" ")}>
         <li className={navStyles.nav__item}>
           <Link className={navStyles.nav__link} href="/">
-            <a className={navStyles.nav__link}>Home</a>
+            Home
           </Link>
         </li>
         <li className={navStyles.nav__item}>
-          <Link href="/projects">
-            <a className={navStyles.nav__link}>Projects</a>
+          <Link  className={navStyles.nav__link} href="/projects">
+            Projects
           </Link>
         </li>
       </ul>
