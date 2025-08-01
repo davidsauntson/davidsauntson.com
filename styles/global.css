@@ -1,12 +1,12 @@
 /* VARS */
 
 :root {
-  --color-blue: #0000ff;
-  --color-blue-30pc: #c4c4ff;
-  --color-blue-20pc: #d8d8ff;
+  --color-blue: #2546f0;
+  --color-blue-30pc: #cad2fb;
+  --color-blue-20pc: #dde2fd;
   --color-blue-10pc: #ebebff;
-  --color-blue-5pc: #f4f4ff;
-  --color-purple: #cb00cb;
+  --color-blue-5pc: #eff1fe;
+  --color-purple: #9c16ff;
   --color-purple-30pc: #ff9dff;
   --color-yellow: #ffff00;
   --color-charcoal: #333333;
@@ -147,6 +147,10 @@ hr {
     var(--color-white) 100%
   );
   background-size: 11.31px 11.31px;
+}
+
+li {
+  margin-bottom: 14px;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */

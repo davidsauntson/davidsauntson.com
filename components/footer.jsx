@@ -8,12 +8,6 @@ export default function Footer() {
     <footer id="footer" className={styles.footer}>
       <Container>
         <small>This website is a cookie free zone.</small>
-        <small>
-          <Link href="mailto:david@davidsauntson.com">
-            Get in touch - email me on david@davidsauntson.com
-          </Link>
-        </small>
-
         <small>&copy; David Sauntson</small>
       </Container>
     </footer>

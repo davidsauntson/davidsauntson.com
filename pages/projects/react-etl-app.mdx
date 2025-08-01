@@ -1,0 +1,35 @@
+import Link from "next/link";
+
+import Head from "../../components/head";
+import Layout from "../../components/layout";
+import ImageWithCaption from "../../components/image-with-caption";
+import Breadcrumbs from "../../components/breadcrumbs";
+
+# A React ETL App for Contentful
+
+We publish quarterly ratings for a number of energy suppliers in the UK.  Scores are calculated in house based on a number of metrics, and [a ranked table along with detailed scoring information](https://www.citizensadvice.org.uk/consumer/your-energy/get-a-better-energy-deal/compare-domestic-energy-suppliers-customer-service/) is presented to users on our site.
+
+The table required a lot of manual data entry and validation so I built a React / Redux app that extracts data from a CSV file, parses the data into the required formats and updates a number of entries in our CMS, Contentful.  All using the Contentful design system, Forma36, to create a custom app that has the look and feel our content designers are used to.
+
+I worked with the energy team's product manager and content designer to refine the user journey and ensure that the app met the needs of the team.  The app is deployed continuously using github actions and uses playwright and vitest for automated testing.
+
+<ImageWithCaption
+  src="/react-etl.png"
+  altText="Part of our custom built app that transfers data from a CSV file into our content management system."
+  caption="The app showing the status of a data import, using Contentful's design system."
+  width={1440}
+  height={900}
+/>
+
+[Check out the code](https://github.com/citizensadvice/contentful-csr-upload).
+
+export const meta = {
+  description:
+    "A react/redux app that helps content designers perform data import and validation quickly",
+};
+export default ({ children }) => (
+  <Layout>
+    <Head pageTitle="Projects, React ETL App" meta={meta} />
+    <main id="main-content">{children}</main>
+  </Layout>
+);

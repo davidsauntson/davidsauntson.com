@@ -1,0 +1,36 @@
+import Link from "next/link";
+
+import Head from "../../components/head";
+import Layout from "../../components/layout";
+import ImageWithCaption from "../../components/image-with-caption";
+import Breadcrumbs from "../../components/breadcrumbs";
+
+# Citizens Advice Design System
+
+Working with a front-end engineer and two product designers, we created a design system that now powers almost all public facing digital products 
+at Citizens Advice.
+
+The design system uses ITCSS and the BEM nomenclature to provide a low-specificity, readable and easily maintainable collection of styles and utilty classes that encourgae semantic HTML markup.  There are a couple of simple javascript modules for common components like accordions, disclosures and headers.  These are distrbuted via npm.  Common components are extracted into ViewComponents and tested via a demo app.
+
+CADS has saved countless engineer hours over its lifetime, enabled rapid prototyping, ensured consistency for our users and shared baked-in accessibilty features across our digital estate.
+
+<ImageWithCaption
+  src="/cads.png"
+  altText="The home page of the Citizens Advice Design System documentation site, built using the design system!"
+  caption="The design system documentaiton site, built the design system 🤯"
+  width={1440}
+  height={900}
+/>
+
+[Check out the code](https://github.com/citizensadvice/design-system) or [visit the documentation site](https://citizens-advice-design-system.netlify.app/)
+
+export const meta = {
+  description:
+    "Rebuilding the Citizens Advice website using a design system and focussing on accessibility.",
+};
+export default ({ children }) => (
+  <Layout>
+    <Head pageTitle="Projects, Citizens Advice" meta={meta} />
+    <main id="main-content">{children}</main>
+  </Layout>
+);

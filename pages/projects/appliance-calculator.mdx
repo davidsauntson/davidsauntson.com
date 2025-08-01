@@ -1,0 +1,37 @@
+import Link from "next/link";
+
+import Head from "../../components/head";
+import Layout from "../../components/layout";
+import ImageWithCaption from "../../components/image-with-caption";
+import Breadcrumbs from "../../components/breadcrumbs";
+
+# Appliance Cost Comparison Calculator
+
+The energy cost crisis meant a lot of users turned to us for advice on how they could save money, and we knew this journey stated with helping people 
+understand where they were energy costs were coming from in their home.
+
+We had an existing tool that was difficult to update, fully reliant on javascript and suffering from some accessibilty issues.  With an original plan to replace the tool on a like for like basis, I spoke to the team about progressive enhancement and how a step by step journey would be easier for the user (something
+we discovered during a different project earlier in the year).
+
+I rebuilt the app using Rails with some progressively enhanced javascript that allows the app to be embedded in an advice page on the site.  During development, I worked with my tech lead to decide where the app should be built, ultimately deciding on making part of the same app that powers our customer service ratings table.  [You can read about this decision in the ADR](https://github.com/citizensadvice/energy-apps/blob/main/docs/adrs/0008-appliance-calculator-location.md), it felt correct at the time but I wonder whether I have made the app as a whole confusing for a new developer.
+
+<ImageWithCaption
+  src="/energy-apps.png"
+  altText="The appliance calcuator showing the comparative costs of running a TV and an electric blanket #snuggles"
+  caption="The appliance calculator, showing a user how the running costs of a TV and an electric blanket compare "
+  width={1440}
+  height={900}
+/>
+
+[Check out the code](https://github.com/citizensadvice/energy-apps) or [visit the calculator](https://www.citizensadvice.org.uk/consumer/energy/energy-supply/save-energy-at-home/check-how-much-your-electrical-appliances-cost-to-use/)
+
+export const meta = {
+  description:
+    "Rebuilding a user facing application that helps people work out their energy costs",
+};
+export default ({ children }) => (
+  <Layout>
+    <Head pageTitle="Projects, Appliance Calculator" meta={meta} />
+    <main id="main-content">{children}</main>
+  </Layout>
+);
