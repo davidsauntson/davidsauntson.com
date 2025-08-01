@@ -17,7 +17,7 @@ module.exports = withMDX({
 
     let headers = []
 
-    if (process.env.NODE_ENV == "production") {
+    if (process.env.VERCEL_ENV == "production") {
       headers = [
         {
           source: "/",
