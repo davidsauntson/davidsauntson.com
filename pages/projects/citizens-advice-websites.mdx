@@ -1,0 +1,34 @@
+import Link from "next/link";
+
+import Head from "../../components/head";
+import Layout from "../../components/layout";
+import ImageWithCaption from "../../components/image-with-caption";
+import Breadcrumbs from "../../components/breadcrumbs";
+
+# Citizens Advice Websites
+
+Two Rails apps - a JSON API with a Postgres database to fetch data from our CMS (Contentful), and a ViewComponent based front end presentational layer with a couple of small React apps.  Deployed to AWS using the AWS CDK, kubernetes and helm.
+
+My inital work on these apps focussed on accessiblity and ensuring our site is compliant with WCAG guidelines (AA).  Since then I have co-authored and maintained and organisation wide design system, led on updating our content model, helped migrate from a legacy CMS and implemented a number of features and refactors by working collaboratively with other engineers, product managers and designers.
+
+<ImageWithCaption
+  src="/ca.png"
+  altText="A page of the Citizens Advice website, showing how a simple and elegant layout gives focus to the content."
+  caption="One of the simple, elegant and accessible templates used  by Citizens Advice."
+  width={1440}
+  height={900}
+/>
+
+[Visit the Citizens Advice website](https://www.citizensadvice.org.uk/)
+
+export const meta = {
+  description:
+    "Rebuilding the Citizens Advice website using a design system and focussing on accessibility.",
+};
+
+export default ({ children }) => (
+  <Layout>
+    <Head pageTitle="Projects, Citizens Advice" meta={meta} />
+    <main id="main-content">{children}</main>
+  </Layout>
+);

@@ -1,26 +1,26 @@
 module.exports = [
   {
-    title: "This Very Website",
-    stub: "my-website",
+    title: "www.citizensadvice.org.uk",
+    stub: "citizens-advice-websites",
   },
   {
-    title: "Citizens Advice Public Website",
-    stub: "citizens-advice-public-website",
+    title: "Citizens Advice Deisgn System",
+    stub: "cads",
   },
   {
-    title: "DHL Component Library",
-    stub: "dhl-front-end",
+    title: "React ETL Contentful App",
+    stub: "react-etl-app",
   },
   {
-    title: "Lord's Matchday Scorecard",
-    stub: "lords-scorecard",
-  },
-  {
-    title: "Kahicool Brochure Site",
-    stub: "kahicool-cms-build",
+    title: "Appliance Cost Calculator",
+    stub: "appliance-calculator",
   },
   {
     title: "Nassari 360 .NET MVC App",
     stub: "nassari-360",
+  },
+  {
+    title: "Lord's Matchday Scorecard",
+    stub: "lords-scorecard",
   },
 ];

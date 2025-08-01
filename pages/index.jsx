@@ -19,13 +19,17 @@ export default function Home() {
         <main id="main-content" className="content">
           <h2>Intro</h2>
           <p>
-            A capable, experienced and personable senior software engineer / tech lead with over 12 years’ experience building and maintaining websites, web applications and APIs.  An experienced line manager and mentor with tech lead experience, I'm looking for a role where I can make strong technical contributions whilst 
+            A capable, experienced and personable senior software engineer / tech lead with over 12 years’ experience building and maintaining websites, web applications and APIs.  
+            An experienced line manager and mentor with tech lead experience, I'm looking for a role where I can make meaningful individual contributions whilst working as part of a team.
           </p>
           <p>
-            I enjoy creating simple, functional and accessible sites and apps using frameworks like Ruby on Rails and React.  An excellent team worker with a long history of collaborative creation with developers, designers, account managers and product owners.
+            I enjoy creating simple, functional and accessible sites and apps using frameworks like Ruby on Rails and React.  
+            An excellent team worker with a long history of collaborative creation with developers, designers, account managers and product owners.
           </p>
           <p>
-            Looking for new opportunities due to organisation restructuring at Citizens Advice.
+            I might struggle to work out the big O notiation of bubble sort or navigate a binary tree on demand; but I can work with a product designer to meet
+            a user need or communicate risk to a non-technical stakeholder.  I enjoy working with other people to solve real world problems and deliver
+            products that people will find useful.  I prefer working with a stable, well-tested codebase in small, diverse and happy teams. 
           </p>
           <p>
             <a href="https://name.pn/david-sauntson">My pronouns are he/him</a>.
@@ -57,8 +61,9 @@ export default function Home() {
             Our tech stack includes: Ruby on Rails, React, Postgres, Redis, AWS, Kubernetes and Helm.
           </p>
           <p>
-            My day-to-day work is very varied, but I like to focus on team health, unblocking, supporting and empowering engineers and working with our delivery and product
-            managers to plan and provide technical guidance on upcoming work.
+            My day-to-day work is very varied, but I like to focus on team health, unblocking, supporting and empowering engineers, and working with our delivery and product
+            managers to plan and provide technical guidance on upcoming work.  At the moment I'm helping us become compliant with cookie regulations, preparing for a pen test
+            and automating maintenance tasks to free up engineer time.
           </p>
 
           <h3>Senior Full Stack Engineer - Citizens Advice</h3>
