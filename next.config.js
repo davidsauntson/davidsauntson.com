@@ -4,7 +4,7 @@ const withMDX = require("@next/mdx")({
 
 const defaultSrc = "default-src 'self'";
 const scriptSrc = "script-src 'self'";
-const styleSrc = "style-src 'self' 'unsafe-inline";
+const styleSrc = "style-src 'self' unsafe-inline";
 const connectSrc = "connect-src 'self' vitals.vercel-insights.com";
 const childSrc = "child-src 'none'";
 const objectSrc = "object-src 'none'";
