@@ -10,6 +10,11 @@ const MainNav = () => {
             Home
           </Link>
         </li>
+        <li className={navStyles.nav__item}>
+          <Link  className={navStyles.nav__link} href="/projects">
+            Projects
+          </Link>
+        </li>
       </ul>
     </nav>
   );
