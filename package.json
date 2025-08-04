@@ -12,7 +12,7 @@
     "classnames": "^2.3.1",
     "next": "^15.4.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react-dom": "^19.1.1",
     "shortid": "^2.2.16"
   },
   "devDependencies": {
