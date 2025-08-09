@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: "www.citizensadvice.org.uk",
+    title: "Citizens Advice Site",
     stub: "citizens-advice-websites",
   },
   {
